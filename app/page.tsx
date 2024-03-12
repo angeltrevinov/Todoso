@@ -7,6 +7,8 @@ export default function Home() {
         <AvatarImage src="https://github.com/shadcn.png" />
         <AvatarFallback>CN</AvatarFallback>
       </Avatar>
+      <a href="/api/auth/login">Login</a>
+      <a href="/api/auth/logout">Logout</a>
     </main>
   );
 }
