@@ -22,9 +22,6 @@ export default function SignupPage() {
     };
 
     useEffect(() => {
-
-        console.log(isValidEmail(singupForm.email))
-
         if (!singupForm.email || !isValidEmail(singupForm.email)) {
             setFormIsValid(false);
             return;
