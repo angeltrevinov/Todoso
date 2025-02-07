@@ -1,0 +1,24 @@
+<main class="h-dvh flex items-center">
+    <div
+        class="
+        w-full
+        h-full
+        md:w-3/4
+        md:h-2/4
+        md:max-w-lg
+        mx-auto
+        md:border-slate-700
+        md:border-solid
+        md:border-2
+        md:rounded-md
+        flex
+        flex-col
+        justify-center
+        items-center
+        px-4
+        md:px-12
+        gap-4"
+    >
+        <slot></slot>
+    </div>
+</main>
