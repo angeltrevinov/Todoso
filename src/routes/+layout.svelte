@@ -3,4 +3,6 @@
     import "../app.css";
 </script>
 
-{@render children()}
+<div class="bg-white dark:bg-black dark:text-white min-h-screen">
+    {@render children()}
+</div>
