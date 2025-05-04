@@ -95,7 +95,7 @@
 </script>
 
 <h1 class="text-3xl font-bold underline">
-    Notes
+    Drawing Demo
 </h1>
 
 <canvas
