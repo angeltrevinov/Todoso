@@ -21,6 +21,8 @@
 		"vite": "^6.0.0"
 	},
 	"dependencies": {
+		"@editorjs/editorjs": "^2.30.8",
+		"@editorjs/header": "^2.8.8",
 		"@tailwindcss/vite": "^4.0.4",
 		"tailwindcss": "^4.0.4"
 	}
