@@ -1,7 +1,30 @@
-<h1>Hello</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script lang="ts">
+    import { toggleMode } from "mode-watcher";
+    
+    import { Button } from "$lib/components/ui/button";
+	import TaskCard from "$lib/components/task-card.svelte";
+	import KanbanCol from "$lib/components/kanban-col.svelte";
+</script>
 
-<h1 class="text-3xl font-bold underline">
-    Hello world!
-</h1>
-  
+<div class="flex flex-row overflow-x-auto">
+    <KanbanCol title="To Do">
+        <TaskCard title="My Task" description="This is a task description"></TaskCard>
+        <TaskCard title="My Task" description="This is a task description"></TaskCard>
+        <TaskCard title="My Task" description="This is a task description"></TaskCard>
+        <TaskCard title="My Task" description="This is a task description"></TaskCard>
+    </KanbanCol>
+    <KanbanCol title="In Progress">
+        <TaskCard title="My Task" description="This is a task description"></TaskCard>
+        <TaskCard title="My Task" description="This is a task description"></TaskCard>
+        <TaskCard title="My Task" description="This is a task description"></TaskCard>
+        <TaskCard title="My Task" description="This is a task description"></TaskCard>
+    </KanbanCol>
+    <KanbanCol title="Done">
+        <TaskCard title="My Task" description="This is a task description"></TaskCard>
+        <TaskCard title="My Task" description="This is a task description"></TaskCard>
+        <TaskCard title="My Task" description="This is a task description"></TaskCard>
+        <TaskCard title="My Task" description="This is a task description"></TaskCard>
+    </KanbanCol>
+</div>
+        
+<Button onclick={toggleMode}>Dark mode</Button>
